@@ -11,22 +11,27 @@ const navbar_logo = document.querySelector('#navbar__logo');
 
 /* hamburger toggle*/
 menu.addEventListener('click',function(e){
+    e.preventDefault();
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 })
 
 /* menu Click */
 menuLinks.addEventListener('click',function(e){
+    e.preventDefault();
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
 })
 
 /* logo redirect */
 navbar_logo.addEventListener('click',function(e){
-    
+    e.preventDefault();
+    window.location.href = 'https://suprabhat1117.github.io/suprabhatk.github.io/';
 })
 
-
+// https://suprabhat1117.github.io/suprabhatk.github.io/
+// http://127.0.0.1:5500/index.html
+// http://127.0.0.1:5500/HTML/project.html 
 
 /* function to validate form */
 // function validateForm(){
