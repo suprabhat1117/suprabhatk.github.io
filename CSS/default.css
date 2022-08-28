@@ -24,6 +24,7 @@ body *{
 
 html{
     scroll-behavior: smooth;
+    transition: 0.4s;
 }
 
 .theme-text{
@@ -333,7 +334,6 @@ button[type="submit"]{
         word-break: keep-all;
     }
 }
-
 
 /* CUSTOM CSS*/
 

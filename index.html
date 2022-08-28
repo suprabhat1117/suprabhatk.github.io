@@ -53,33 +53,17 @@
     <!-- main -->
 
     <!-- contact us -->
-    <!-- onsubmit="event.preventDefault();validateForm()" -->
-    <!-- <div id="contact__us"> 
-        <form class="contact__form" action="https://formsubmit.co/suprabhat.karmakar17@gmail.com" method="POST"  >
-            <h1 class="contactUs__label">Get In Touch</h1>
-
-            <label class="label" for="name">Name:</label>
-            <input class="input" type="text" name="fname" id="name" placeholder="Yout Name">
-            <small class="error"></small>
-
-            <label class="label" for="email">Email:</label>
-            <input class="input" type="email" name="email" id="email" placeholder="Yout Email">
-            <small class="error"></small>
-
-            <label class="label" for="message">Message:</label>
-            <textarea class="textarea" name="subject" id="message" placeholder="Your Message" rows="6"></textarea>
-            <small class="error"></small>
-
-            <div class="submit__button">
-                <input type="submit" class="input" value="Send Message">
-                <p id="success"></p>
-            </div>
-        </form>
-    </div> -->
-
     <div class="container" id="contact__us">
         <h1 class="contactUs__label theme-text">Get In Touch</h1>
-        <form class="contact__form" target="_blank" action="https://formsubmit.co/suprabhat.karmakar17@gmail.com" method="POST">
+        <form class="contact__form" target="_blank" action="https://formsubmit.co/a5e16d2195f589768386cbe3952123ff" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden" name="_next" value="https://suprabhat1117.github.io/suprabhatk.github.io/success.html">
+
           <div class="form-group">
             <div class="form-row">
               <div class="col">
@@ -99,11 +83,6 @@
     <!--contact us -->
 
     <script src="JS/script.js"></script>
-
-    <!-- mail Configuration CDN -->
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
-
-
 
 </body>
 

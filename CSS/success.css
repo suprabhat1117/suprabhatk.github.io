@@ -1,0 +1,31 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Kumbh Sans',sans-serif;
+}
+
+body *{
+    scroll-behavior:smooth;
+	transition: 0.3s;
+}
+
+:root{
+    --mainColor:#eaeaea;
+    --secondaryColor:#fff;
+
+    --mainText:black;
+    --secondaryText:#4b5156;
+    
+    --themedotborder:#24292e;
+
+    --buttonColor:black;
+}
+
+body{
+    background: var(--mainColor);
+}
+
+.theme-text{
+    color:var(--mainText);
+}
