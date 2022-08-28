@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>弓UPES</title>
 
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/default.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
 </head>
 
 <body>
@@ -31,16 +33,24 @@
             </ul>
         </div>
     </nav>
+    <!-- nav -->
 
     <!-- main -->
     <div class="main" id="home">
         <div class="main__container">
             <div class="main__content">
-                <h1>WE ARE 弓UPES</h1>
-                <p>The Rising Dawn</p>
+                <h1 class="theme-text">WE ARE 弓UPES</h1>
+                <p class="theme-text">The Rising Dawn</p>
+                <div class="theme-options-wrapper">
+                    <div data-mode="light-mode" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="blue-mode" id="blue-mode" class="theme-dot"></div>
+                    <div data-mode="green-mode" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple-mode" id="purple-mode" class="theme-dot"></div>
+                </div>
             </div>
         </div>
     </div>
+    <!-- main -->
 
     <!-- contact us -->
     <!-- onsubmit="event.preventDefault();validateForm()" -->
@@ -68,7 +78,7 @@
     </div> -->
 
     <div class="container" id="contact__us">
-        <h1 class="contactUs__label">Get In Touch</h1>
+        <h1 class="contactUs__label theme-text">Get In Touch</h1>
         <form class="contact__form" target="_blank" action="https://formsubmit.co/suprabhat.karmakar17@gmail.com" method="POST">
           <div class="form-group">
             <div class="form-row">
@@ -86,6 +96,7 @@
           <button type="submit" class="btn btn-lg btn-dark btn-block input">Submit Form</button>
         </form>
     </div>
+    <!--contact us -->
 
     <script src="JS/script.js"></script>
 
