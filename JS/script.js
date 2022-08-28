@@ -13,6 +13,8 @@ const root_directory = '/suprabhatk.github.io/';
 let themeDots = document.getElementsByClassName('theme-dot');
 let theme = localStorage.getItem('theme');
 
+const navbarlinks = document.getElementsByClassName('navbar__links');
+
 /* hamburger toggle*/
 menu.addEventListener('click',function(e){
     e.preventDefault();
@@ -27,10 +29,18 @@ menuLinks.addEventListener('click',function(e){
     menuLinks.classList.toggle('active');
 })
 
+for(var i=0;i < navbarlinks.length;i++){
+    navbarlinks[i].addEventListener('click',function(e){
+        e.preventDefault();
+        window.location.href= ("#"+this.getAttribute('data-name'));
+    })
+}
+
+
 /* logo redirect */
 navbar_logo.addEventListener('click',function(e){
     e.preventDefault();
-    window.location.href = window.location.href + 'index.html';
+    window.location.reload();
 })
 
 /* theme change */
@@ -63,70 +73,3 @@ function setTheme(mode){
 
     localStorage.setItem('theme',mode);
 }
-
-// https://suprabhat1117.github.io/suprabhatk.github.io/
-// http://127.0.0.1:5500/index.html
-// http://127.0.0.1:5500/HTML/project.html 
-
-/* function to validate form */
-// function validateForm(){
-
-//     clearErrorMessages();
-//     let errorFlag = false;
-
-//     if(nameInput.value.length < 1){
-//         errorNodes[0].innerText = "Name cannot be blank";
-//         nameInput.classList.add('error-border');
-//         errorFlag = true;
-//     }
-
-//     if(!emailIsValid(email.value)){
-//         errorNodes[1].innerText = "Invalid email";
-//         emailInput.classList.add('error-border');
-//         errorFlag = true;
-//     }
-
-//     if(messageInput.value.length < 10){
-//         errorNodes[2].innerText = "Message should be more then 10 letter";
-//         messageInput.classList.add('error-border');
-//         errorFlag=true;
-//     }
-
-//     if(!errorFlag){
-//         sendMail();
-        
-//     }
-// }
-
-// // clear error / success message
-// function clearErrorMessages(){
-//     for(let i=0;i<errorNodes.length;i++){
-//         errorNodes[i].innerText = '';
-//     }
-//     nameInput.classList.remove('error-border');
-//     emailInput.classList.remove('error-border');
-//     messageInput.classList.remove('error-border');
-// }
-
-// /* checl email is valid */
-// function emailIsValid(email){
-//     let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//     return pattern.test(email);
-// }
-
-/* mail Configuration*/
-// function sendMail(){
-//     Email.send({
-//         Host : "smtp.gmail.com",
-//         Username : "",
-//         Password : "",
-//         To : 'suprabhat.karmakar17@gmail.com',
-//         From : emailInput.value,
-//         Subject : "" ,
-//         Body : messageInput.value
-//     }).then(
-//       message => alert(message)
-
-//     //   success.innerText = "Message has been sent!"
-//     );
-// }

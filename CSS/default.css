@@ -22,6 +22,10 @@ body *{
 	transition: 0.3s;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .theme-text{
     color: var(--mainText);
 }
@@ -328,6 +332,13 @@ button[type="submit"]{
     .main__content h1{
         word-break: keep-all;
     }
+}
+
+
+/* CUSTOM CSS*/
+
+.mt-0{
+    margin: 0 !important;
 }
 
 
