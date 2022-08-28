@@ -337,6 +337,7 @@ button[type="submit"]{
 
 /* CUSTOM CSS*/
 
+/* removing margin from button*/
 .mt-0{
     margin: 0 !important;
 }
